@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8409b31a-91a9-4d4e-bb15-b604cbe0e55c" name="Changes" comment="feat: calculate affirmation with conjonction and">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hei/school/conjonction/Or.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hei/school/conjonction/OrTest.java" afterDir="false" />
+    <list default="true" id="8409b31a-91a9-4d4e-bb15-b604cbe0e55c" name="Changes" comment="feat: calculate affirmation with conjonction or">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hei/school/conjonction/Then.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/hei/school/conjonction/ThenTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hei/school/affirmationStatus/AffirmationStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hei/school/affirmationStatus/AffirmationStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hei/school/conjonction/And.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hei/school/conjonction/And.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hei/school/conjonction/Conjunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hei/school/conjonction/Conjunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hei/school/conjonction/OrTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hei/school/conjonction/OrTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +48,7 @@
     "JUnit.AffirmationTest.affirmation_is_true_with_and.executor": "Run",
     "JUnit.AndTest.executor": "Run",
     "JUnit.OrTest.executor": "Run",
+    "JUnit.ThenTest.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
@@ -75,7 +77,7 @@
       <recent name="hei.school" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OrTest">
+  <component name="RunManager" selected="JUnit.ThenTest">
     <configuration name="AndTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CalculusRatiocinator" />
       <extension name="coverage">
@@ -138,10 +140,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ThenTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CalculusRatiocinator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hei.school.conjonction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hei.school.conjonction" />
+      <option name="MAIN_CLASS_NAME" value="hei.school.conjonction.ThenTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.OrTest" />
+        <item itemvalue="JUnit.ThenTest" />
         <item itemvalue="JUnit.AndTest" />
+        <item itemvalue="JUnit.OrTest" />
         <item itemvalue="JUnit.AndTest.affirmation_is_true_with_and" />
         <item itemvalue="JUnit.AndTest.affirmation_is_false_with_and" />
       </list>
@@ -164,7 +182,7 @@
       <option name="presentableId" value="Default" />
       <updated>1717756363869</updated>
       <workItem from="1717756364879" duration="3115000" />
-      <workItem from="1717759541093" duration="6998000" />
+      <workItem from="1717759541093" duration="8599000" />
     </task>
     <task id="LOCAL-00001" summary="chore: quickstart mvn archetype with Java 22">
       <option name="closed" value="true" />
@@ -214,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717766199179</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: calculate affirmation with conjonction or">
+      <option name="closed" value="true" />
+      <created>1717766676752</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717766676752</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +253,7 @@
     <MESSAGE value="refactore: make AffirmationStatus.java permit only Affirmative, Negative, IDontKnow" />
     <MESSAGE value="refactore: make all class negatif extend Negatif, and affirmative extends Affirmative" />
     <MESSAGE value="feat: calculate affirmation with conjonction and" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: calculate affirmation with conjonction and" />
+    <MESSAGE value="feat: calculate affirmation with conjonction or" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: calculate affirmation with conjonction or" />
   </component>
 </project>

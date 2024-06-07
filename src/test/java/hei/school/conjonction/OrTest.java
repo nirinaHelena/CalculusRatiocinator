@@ -13,58 +13,58 @@ class OrTest{
         var truth = new Truth("Lou est beau.");
         var lie = new Lie("Lou est pauvre.");
         var iDontKnow = new IDontKnow("Lou est généreux.");
-        var and = new And();
-        var affirmation = new Affirmation(truth, and, iDontKnow);
+        var or = new Or();
+        var affirmation = new Affirmation(truth, or, iDontKnow);
 
-        var result = and.calculate(affirmation);
+        var result = or.calculate(affirmation);
         assertInstanceOf(Affirmative.class, result);
     }
 
     @Test
-    void affirmation_is_true_with_idontknow_and_true(){
+    void affirmation_is_true_with_idontknow_or_true(){
         var truth = new Truth("Lou est beau.");
         var lie = new Lie("Lou est pauvre.");
         var iDontKnow = new IDontKnow("Lou est généreux.");
-        var and = new And();
-        var affirmation = new Affirmation(iDontKnow, and, truth);
+        var or = new Or();
+        var affirmation = new Affirmation(iDontKnow, or, truth);
 
-        var result = and.calculate(affirmation);
+        var result = or.calculate(affirmation);
         assertInstanceOf(Affirmative.class, result);
     }
 
     @Test
-    void affirmation_is_true_with_false_and_true(){
+    void affirmation_is_true_with_false_or_true(){
         var truth = new Truth("Lou est beau.");
         var lie = new Lie("Lou est pauvre.");
         var affirmationStatus = new IDontKnow("Lou est généreux.");
-        var and = new And();
-        var affirmation = new Affirmation(lie, and, truth);
+        var or = new Or();
+        var affirmation = new Affirmation(lie, or, truth);
 
-        var result = and.calculate(affirmation);
+        var result = or.calculate(affirmation);
         assertInstanceOf(Affirmative.class, result);
     }
 
     @Test
-    void affirmation_is_true_with_true_and_false(){
+    void affirmation_is_true_with_true_or_false(){
         var truth = new Truth("Lou est beau.");
         var lie = new Lie("Lou est pauvre.");
         var affirmationStatus = new IDontKnow("Lou est généreux.");
-        var and = new And();
-        var affirmation = new Affirmation(truth, and, lie);
+        var or = new Or();
+        var affirmation = new Affirmation(truth, or, lie);
 
-        var result = and.calculate(affirmation);
+        var result = or.calculate(affirmation);
         assertInstanceOf(Affirmative.class, result);
     }
 
     @Test
-    void affirmation_is_false_with_false_and_false(){
+    void affirmation_is_false_with_false_or_false(){
         var truth = new Truth("Lou est beau.");
         var lie = new Lie("Lou est pauvre.");
         var affirmationStatus = new IDontKnow("Lou est généreux.");
-        var and = new And();
-        var affirmation = new Affirmation(lie, and, lie);
+        var or = new Or();
+        var affirmation = new Affirmation(lie, or, lie);
 
-        var result = and.calculate(affirmation);
+        var result = or.calculate(affirmation);
         assertInstanceOf(Negative.class, result);
     }
 }

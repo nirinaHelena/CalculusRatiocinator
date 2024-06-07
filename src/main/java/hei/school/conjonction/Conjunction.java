@@ -7,6 +7,6 @@ import lombok.Getter;
 @AllArgsConstructor
 @Getter
 public sealed abstract class Conjunction permits
-    And, Or {
+    And, Or, Then {
     protected final String conjunction;
 }
