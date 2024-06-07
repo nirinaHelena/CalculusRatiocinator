@@ -4,11 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8409b31a-91a9-4d4e-bb15-b604cbe0e55c" name="Changes" comment="" />
+    <list default="true" id="8409b31a-91a9-4d4e-bb15-b604cbe0e55c" name="Changes" comment="chore: quickstart mvn archetype with Java 22">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hei/school/Affirmation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hei/school/CordinationConjunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hei/school/affirmationStatus/AffirmationStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hei/school/affirmationStatus/relative/False.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hei/school/affirmationStatus/relative/IDontKnow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hei/school/affirmationStatus/relative/True.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hei/school/affirmationStatus/universal/Lie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hei/school/affirmationStatus/universal/Truth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hei/school/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hei/school/AppTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Record" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -17,17 +36,24 @@
   "associatedIndex": 2
 }]]></component>
   <component name="ProjectId" id="2hY1n5EAtsVI3MSJmS3IEutJgnC" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -48,11 +74,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1717756363869</updated>
-      <workItem from="1717756364879" duration="4000" />
+      <workItem from="1717756364879" duration="3115000" />
     </task>
+    <task id="LOCAL-00001" summary="chore: quickstart mvn archetype with Java 22">
+      <option name="closed" value="true" />
+      <created>1717756727453</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1717756727453</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="chore: quickstart mvn archetype with Java 22" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: quickstart mvn archetype with Java 22" />
   </component>
 </project>
