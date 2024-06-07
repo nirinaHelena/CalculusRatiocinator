@@ -11,23 +11,20 @@ public final class And extends Conjunction implements CordinationConjunction {
 
     @Override
     public AffirmationStatus calculate(Affirmation affirmation) {
+        AffirmationStatus affirmationStatus = new AffirmationStatus(
+                affirmation.affirmation1().getAffirmation() +
+                        affirmation.conjunction().getConjunction() +
+                        affirmation.affirmation2().getAffirmation());
+
+        Affirmative truth = new Affirmative(affirmationStatus.getAffirmation());
+        Negative lie = new Lie(affirmationStatus.getAffirmation());
+        IDontKnow iDontKnow = new IDontKnow(affirmationStatus.getAffirmation());
+
         boolean a = affirmation.affirmation1() instanceof Affirmative;
         boolean b = affirmation.affirmation2() instanceof Affirmative;
         boolean c = affirmation.affirmation1() instanceof IDontKnow;
         boolean d = affirmation.affirmation2() instanceof IDontKnow;
 
-        Affirmative truth = new Affirmative(
-                affirmation.affirmation1().getAffirmation() +
-                affirmation.conjunction().getConjunction() +
-                affirmation.affirmation2().getAffirmation());
-        Negative lie = new Lie(
-                affirmation.affirmation1().getAffirmation() +
-                affirmation.conjunction().getConjunction() +
-                affirmation.affirmation2().getAffirmation());
-        IDontKnow iDontKnow = new IDontKnow(
-                affirmation.affirmation1().getAffirmation() +
-                        affirmation.conjunction().getConjunction() +
-                        affirmation.affirmation2().getAffirmation());
-        return (a == b) ? truth : (c || d) ? iDontKnow : lie;
+        return (a == true && b == true) ? truth : (c || d) ? iDontKnow : lie;
     }
 }
