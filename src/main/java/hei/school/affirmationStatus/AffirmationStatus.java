@@ -6,6 +6,6 @@ import lombok.Getter;
 @AllArgsConstructor
 @Getter
 public sealed abstract class AffirmationStatus permits
-        False, IDontKnow, True, Lie, Truth {
+        Affirmative, Negative, IDontKnow {
     protected final String affirmation;
 }
