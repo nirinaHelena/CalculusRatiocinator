@@ -3,9 +3,9 @@ package hei.school.conjonction;
 import hei.school.Affirmation;
 import hei.school.affirmationStatus.*;
 
-public final class And extends Conjunction implements CordinationConjunction {
-    private static final String conjunction = "and";
-    public And() {
+public final class Or extends Conjunction implements CordinationConjunction{
+    private static final String conjunction = "or";
+    public Or() {
         super(conjunction);
     }
 
@@ -25,6 +25,7 @@ public final class And extends Conjunction implements CordinationConjunction {
         boolean c = affirmation.affirmation1() instanceof IDontKnow;
         boolean d = affirmation.affirmation2() instanceof IDontKnow;
 
-        return (a == true || b == true) ? truth : lie;
+        return (a == true || b == true) ? truth : (c && d) ? iDontKnow : lie;
+
     }
 }

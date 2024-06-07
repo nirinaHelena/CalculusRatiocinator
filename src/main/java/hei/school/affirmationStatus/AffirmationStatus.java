@@ -5,7 +5,7 @@ import lombok.Getter;
 
 @AllArgsConstructor
 @Getter
-public sealed abstract class AffirmationStatus permits
+public sealed class AffirmationStatus permits
         Affirmative, Negative, IDontKnow {
     protected final String affirmation;
 }
